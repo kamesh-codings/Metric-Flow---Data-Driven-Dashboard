@@ -689,7 +689,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="chart-card chart-card-half" style={{ margin: '0 auto', gridColumn: 'span 12' }}>
+          <div className="chart-card chart-card-half">
             <div className="chart-header">
               <h2>🌐 Source-Wise Business Distribution (Pie Chart)</h2>
             </div>
@@ -736,7 +736,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="chart-card chart-card-half">
+          <div className="chart-card chart-card-full">
             <div className="chart-header">
               <h2>📅 Establishment Era Timeline</h2>
             </div>
