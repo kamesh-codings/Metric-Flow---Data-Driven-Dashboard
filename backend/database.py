@@ -4,8 +4,8 @@ from mysql.connector import errorcode, pooling
 
 DB_CONFIG = {
     "host": os.getenv("DB_HOST", "localhost"),
-    "user": os.getenv("DB_USER", "root"),
-    "password": os.getenv("DB_PASSWORD", "@Kamesh06"),
+    "user": os.getenv("DB_USER", ""),
+    "password": os.getenv("DB_PASSWORD", ""),
     "database": os.getenv("DB_NAME", "business_dashboard"),
     "port": int(os.getenv("DB_PORT", 3306))
 }
