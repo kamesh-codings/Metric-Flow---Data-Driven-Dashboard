@@ -267,19 +267,19 @@ const Dashboard = () => {
   };
 
   const cityColors = {
-    bg: ['rgba(14, 165, 233, 0.85)', 'rgba(56, 189, 248, 0.85)', 'rgba(59, 130, 246, 0.85)', 'rgba(96, 165, 250, 0.85)', 'rgba(29, 78, 216, 0.85)'],
+    bg: ['rgba(6, 182, 212, 0.85)', 'rgba(14, 165, 233, 0.85)', 'rgba(59, 130, 246, 0.85)', 'rgba(20, 184, 166, 0.85)', 'rgba(16, 185, 129, 0.85)'],
     border: ['#06b6d4', '#0ea5e9', '#3b82f6', '#14b8a6', '#10b981'],
     hover: ['#0891b2', '#0284c7', '#2563eb', '#0d9488', '#059669']
   };
 
   const categoryColors = {
-    bg: ['rgba(2, 132, 199, 0.85)', 'rgba(3, 105, 161, 0.85)', 'rgba(14, 165, 233, 0.85)', 'rgba(56, 189, 248, 0.85)', 'rgba(59, 130, 246, 0.85)', 'rgba(96, 165, 250, 0.85)', 'rgba(147, 197, 253, 0.85)'],
+    bg: ['rgba(244, 63, 94, 0.85)', 'rgba(236, 72, 153, 0.85)', 'rgba(217, 70, 239, 0.85)', 'rgba(168, 85, 247, 0.85)', 'rgba(99, 102, 241, 0.85)', 'rgba(249, 115, 22, 0.85)', 'rgba(245, 158, 11, 0.85)'],
     border: ['#f43f5e', '#ec4899', '#d946ef', '#a855f7', '#6366f1', '#f97316', '#f59e0b'],
     hover: ['#e11d48', '#db2777', '#c026d3', '#9333ea', '#7c3aed', '#ea580c', '#d97706']
   };
 
   const sourceColors = {
-    bg: ['rgba(37, 99, 235, 0.85)', 'rgba(59, 130, 246, 0.85)', 'rgba(96, 165, 250, 0.85)', 'rgba(147, 197, 253, 0.85)', 'rgba(191, 219, 254, 0.85)'],
+    bg: ['rgba(250, 204, 21, 0.85)', 'rgba(132, 204, 22, 0.85)', 'rgba(34, 197, 94, 0.85)', 'rgba(163, 230, 53, 0.85)', 'rgba(251, 146, 60, 0.85)'],
     border: ['#facc15', '#84cc16', '#22c55e', '#a3e635', '#fb923c'],
     hover: ['#eab308', '#65a30d', '#16a34a', '#84cc16', '#f97316']
   };
@@ -651,7 +651,7 @@ const Dashboard = () => {
             <div className="kpi-value">Since {extendedMetrics.oldestYear}</div>
             <div className="kpi-subtext">Longest standing record</div>
           </div>
-          <div className="kpi-icon-wrapper" style={{background: 'rgba(37, 99, 235, 0.18)', color: '#2563eb', border: '1px solid rgba(37, 99, 235, 0.3)'}}>🏛️</div>
+          <div className="kpi-icon-wrapper" style={{background: 'rgba(236, 72, 153, 0.18)', color: '#ec4899', border: '1px solid rgba(236, 72, 153, 0.3)'}}>🏛️</div>
         </div>
 
         <div className="kpi-card" title="Information only">
@@ -709,11 +709,11 @@ const Dashboard = () => {
                   datasets: [{
                     data: Object.values(extendedMetrics.ratingDistribution),
                     backgroundColor: [
-                      'rgba(14, 165, 233, 0.85)',
-                      'rgba(59, 130, 246, 0.85)',
-                      'rgba(96, 165, 250, 0.85)',
-                      'rgba(147, 197, 253, 0.85)',
-                      'rgba(191, 219, 254, 0.85)',
+                      'rgba(16, 185, 129, 0.85)',
+                      'rgba(6, 182, 212, 0.85)',
+                      'rgba(245, 158, 11, 0.85)',
+                      'rgba(249, 115, 22, 0.85)',
+                      'rgba(239, 68, 68, 0.85)',
                     ],
                     borderColor: '#ffffff',
                     borderWidth: 3,
@@ -747,10 +747,10 @@ const Dashboard = () => {
                   datasets: [{
                     label: 'Businesses Founded',
                     data: Object.keys(extendedMetrics.establishmentDecades).sort().map(k => extendedMetrics.establishmentDecades[k]),
-                    borderColor: '#3b82f6',
-                    backgroundColor: 'rgba(59, 130, 246, 0.15)',
-                    pointBackgroundColor: '#60a5fa',
-                    pointBorderColor: '#3b82f6',
+                    borderColor: '#6366f1',
+                    backgroundColor: 'rgba(99, 102, 241, 0.15)',
+                    pointBackgroundColor: '#818cf8',
+                    pointBorderColor: '#6366f1',
                     pointRadius: 5,
                     pointHoverRadius: 8,
                     tension: 0.4,
