@@ -246,22 +246,22 @@ const Dashboard = () => {
     plugins: {
       legend: { display: false },
       tooltip: {
-        backgroundColor: '#1e293b',
+        backgroundColor: '#ffffff',
         titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' },
         bodyFont: { family: 'Plus Jakarta Sans', size: 13 },
         padding: 12,
-        borderColor: '#334155',
+        borderColor: '#e2e8f0',
         borderWidth: 1,
       },
     },
     scales: {
       x: {
-        ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } },
-        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+        ticks: { color: '#475569', font: { family: 'Plus Jakarta Sans', size: 11 } },
+        grid: { color: 'rgba(0, 0, 0, 0.05)' },
       },
       y: {
-        ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } },
-        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+        ticks: { color: '#475569', font: { family: 'Plus Jakarta Sans', size: 11 } },
+        grid: { color: 'rgba(0, 0, 0, 0.05)' },
       },
     },
   };
@@ -273,8 +273,8 @@ const Dashboard = () => {
   };
 
   const categoryColors = {
-    bg: ['rgba(244, 63, 94, 0.85)', 'rgba(236, 72, 153, 0.85)', 'rgba(217, 70, 239, 0.85)', 'rgba(168, 85, 247, 0.85)', 'rgba(139, 92, 246, 0.85)', 'rgba(249, 115, 22, 0.85)', 'rgba(245, 158, 11, 0.85)'],
-    border: ['#f43f5e', '#ec4899', '#d946ef', '#a855f7', '#8b5cf6', '#f97316', '#f59e0b'],
+    bg: ['rgba(244, 63, 94, 0.85)', 'rgba(236, 72, 153, 0.85)', 'rgba(217, 70, 239, 0.85)', 'rgba(168, 85, 247, 0.85)', 'rgba(99, 102, 241, 0.85)', 'rgba(249, 115, 22, 0.85)', 'rgba(245, 158, 11, 0.85)'],
+    border: ['#f43f5e', '#ec4899', '#d946ef', '#a855f7', '#6366f1', '#f97316', '#f59e0b'],
     hover: ['#e11d48', '#db2777', '#c026d3', '#9333ea', '#7c3aed', '#ea580c', '#d97706']
   };
 
@@ -308,7 +308,7 @@ const Dashboard = () => {
     plugins: {
       legend: { display: false },
       tooltip: {
-        backgroundColor: '#1e293b',
+        backgroundColor: '#ffffff',
         titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' },
         bodyFont: { family: 'Plus Jakarta Sans', size: 13 },
         padding: 12,
@@ -316,12 +316,12 @@ const Dashboard = () => {
     },
     scales: {
       x: {
-        ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } },
-        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+        ticks: { color: '#475569', font: { family: 'Plus Jakarta Sans', size: 11 } },
+        grid: { color: 'rgba(0, 0, 0, 0.05)' },
       },
       y: {
-        ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } },
-        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+        ticks: { color: '#475569', font: { family: 'Plus Jakarta Sans', size: 11 } },
+        grid: { color: 'rgba(0, 0, 0, 0.05)' },
       },
     },
   };
@@ -348,14 +348,14 @@ const Dashboard = () => {
       legend: {
         position: 'bottom',
         labels: {
-          color: '#cbd5e1',
+          color: '#e2e8f0',
           font: { family: 'Plus Jakarta Sans', size: 12, weight: '500' },
           padding: 16,
           usePointStyle: true,
         },
       },
       tooltip: {
-        backgroundColor: '#1e293b',
+        backgroundColor: '#ffffff',
         titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' },
         bodyFont: { family: 'Plus Jakarta Sans', size: 13 },
         padding: 12,
@@ -715,7 +715,7 @@ const Dashboard = () => {
                       'rgba(249, 115, 22, 0.85)',
                       'rgba(239, 68, 68, 0.85)',
                     ],
-                    borderColor: '#0d1322',
+                    borderColor: '#ffffff',
                     borderWidth: 3,
                     hoverOffset: 8,
                   }],
@@ -727,9 +727,9 @@ const Dashboard = () => {
                   plugins: {
                     legend: {
                       position: 'bottom',
-                      labels: { color: '#cbd5e1', font: { family: 'Plus Jakarta Sans', size: 12, weight: '500' }, padding: 14, usePointStyle: true },
+                      labels: { color: '#e2e8f0', font: { family: 'Plus Jakarta Sans', size: 12, weight: '500' }, padding: 14, usePointStyle: true },
                     },
-                    tooltip: { backgroundColor: '#1e293b', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
+                    tooltip: { backgroundColor: '#ffffff', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
                   },
                 }}
               />
@@ -747,10 +747,10 @@ const Dashboard = () => {
                   datasets: [{
                     label: 'Businesses Founded',
                     data: Object.keys(extendedMetrics.establishmentDecades).sort().map(k => extendedMetrics.establishmentDecades[k]),
-                    borderColor: '#8b5cf6',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    pointBackgroundColor: '#a78bfa',
-                    pointBorderColor: '#8b5cf6',
+                    borderColor: '#6366f1',
+                    backgroundColor: 'rgba(99, 102, 241, 0.15)',
+                    pointBackgroundColor: '#818cf8',
+                    pointBorderColor: '#6366f1',
                     pointRadius: 5,
                     pointHoverRadius: 8,
                     tension: 0.4,
@@ -763,11 +763,11 @@ const Dashboard = () => {
                   maintainAspectRatio: false,
                   plugins: {
                     legend: { display: false },
-                    tooltip: { backgroundColor: '#1e293b', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
+                    tooltip: { backgroundColor: '#ffffff', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
                   },
                   scales: {
-                    x: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                    y: { ticks: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
+                    x: { ticks: { color: '#475569', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: 'rgba(0, 0, 0, 0.05)' } },
+                    y: { ticks: { color: '#475569', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: 'rgba(0, 0, 0, 0.05)' } },
                   },
                 }}
               />
@@ -800,8 +800,8 @@ const Dashboard = () => {
                     <tr key={item.id} className="clickable-row" onClick={() => setSelectedBusiness(item)} title="Click for details">
                       <td>
                         <span className="rank-badge" style={{
-                          background: idx === 0 ? 'linear-gradient(135deg, #f59e0b, #fbbf24)' : idx === 1 ? 'linear-gradient(135deg, #94a3b8, #cbd5e1)' : idx === 2 ? 'linear-gradient(135deg, #d97706, #f59e0b)' : 'rgba(255,255,255,0.08)',
-                          color: idx < 3 ? '#0f172a' : '#94a3b8',
+                          background: idx === 0 ? 'linear-gradient(135deg, #f59e0b, #fbbf24)' : idx === 1 ? 'linear-gradient(135deg, #475569, #e2e8f0)' : idx === 2 ? 'linear-gradient(135deg, #d97706, #f59e0b)' : 'rgba(255,255,255,0.08)',
+                          color: idx < 3 ? '#0f172a' : '#475569',
                         }}>#{idx + 1}</span>
                       </td>
                       <td style={{ fontWeight: '700', color: '#f8fafc' }}>{item.business_name}</td>
@@ -888,7 +888,7 @@ const Dashboard = () => {
         <div className="table-header">
           <div>
             <h2>📋 Master Listing Directory</h2>
-            <p style={{ fontSize: '0.8125rem', color: '#94a3b8' }}>
+            <p style={{ fontSize: '0.8125rem', color: '#475569' }}>
               Showing {sortedListings.length} of {listings.length} retrieved MySQL database entries
             </p>
           </div>
@@ -951,7 +951,7 @@ const Dashboard = () => {
                   <td style={{ color: '#f59e0b', fontWeight: '500' }}>{item.rating ? `\u2b50 ${item.rating}` : '-'}</td>
                   <td style={{ fontSize: '0.85rem' }}>{item.opening_time ? `${item.opening_time} - ${item.closing_time}` : '-'}</td>
                   <td>{item.established_year || '-'}</td>
-                  <td style={{ fontFamily: 'monospace', color: '#cbd5e1' }}>{item.phone}</td>
+                  <td style={{ fontFamily: 'monospace', color: '#e2e8f0' }}>{item.phone}</td>
                   
                 </tr>
               ))}
@@ -1173,7 +1173,7 @@ const Dashboard = () => {
                   <div>
                     <div className="kpi-modal-summary-bar">
                       <span>Found <strong>{targetListings.length}</strong> matching businesses</span>
-                      <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>💡 Click any row to view full details</span>
+                      <span style={{ fontSize: '0.8rem', color: '#475569' }}>💡 Click any row to view full details</span>
                     </div>
 
                     <div className="table-wrapper">
@@ -1463,7 +1463,7 @@ const Dashboard = () => {
                   <div>
                     <div className="kpi-modal-summary-bar">
                       <span>Found <strong>{filtered.length}</strong> high-rated businesses (≥ 4.5 ⭐)</span>
-                      <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>💡 Click any row to view full details</span>
+                      <span style={{ fontSize: '0.8rem', color: '#475569' }}>💡 Click any row to view full details</span>
                     </div>
                     <div className="table-wrapper">
                       <table>
@@ -1482,8 +1482,8 @@ const Dashboard = () => {
                             <tr key={item.id} className="clickable-row" onClick={() => setSelectedBusiness(item)} title="Click to view business details">
                               <td>
                                 <span className="rank-badge" style={{
-                                  background: idx === 0 ? 'linear-gradient(135deg,#f59e0b,#fbbf24)' : idx === 1 ? 'linear-gradient(135deg,#94a3b8,#cbd5e1)' : idx === 2 ? 'linear-gradient(135deg,#d97706,#f59e0b)' : 'rgba(255,255,255,0.08)',
-                                  color: idx < 3 ? '#0f172a' : '#94a3b8',
+                                  background: idx === 0 ? 'linear-gradient(135deg,#f59e0b,#fbbf24)' : idx === 1 ? 'linear-gradient(135deg,#475569,#e2e8f0)' : idx === 2 ? 'linear-gradient(135deg,#d97706,#f59e0b)' : 'rgba(255,255,255,0.08)',
+                                  color: idx < 3 ? '#0f172a' : '#475569',
                                 }}>#{(kpiModalPage - 1) * pageSize + idx + 1}</span>
                               </td>
                               <td style={{ fontWeight: '700', color: '#f8fafc' }}>{item.business_name}</td>
@@ -1574,7 +1574,7 @@ const Dashboard = () => {
                   <div>
                     <div className="kpi-modal-summary-bar">
                       <span>Found <strong>{filtered.length}</strong> 24-hour businesses</span>
-                      <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>💡 Click any row to view full details</span>
+                      <span style={{ fontSize: '0.8rem', color: '#475569' }}>💡 Click any row to view full details</span>
                     </div>
                     <div className="table-wrapper">
                       <table>
@@ -1595,7 +1595,7 @@ const Dashboard = () => {
                               <td><span className="finder-tag finder-tag-category">{item.category}</span></td>
                               <td><span className="finder-tag finder-tag-city">📍 {item.city}</span></td>
                               <td style={{ color: '#f59e0b', fontWeight: '600' }}>⭐ {item.rating || '-'}</td>
-                              <td style={{ fontFamily: 'monospace', color: '#cbd5e1' }}>{item.phone}</td>
+                              <td style={{ fontFamily: 'monospace', color: '#e2e8f0' }}>{item.phone}</td>
                               <td><span className="source-tag">{item.source}</span></td>
                             </tr>
                           ))}
