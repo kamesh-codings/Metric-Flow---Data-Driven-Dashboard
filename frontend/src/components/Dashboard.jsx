@@ -1043,14 +1043,14 @@ const Dashboard = () => {
                 </span>
                 <div>
                   <h3 className="kpi-modal-title">
-                    {activeKpiModal === 'listings' && '📋 Master Listing Directory (500 Records)'}
-                    {activeKpiModal === 'city' && '🏙️ City-Wise Business Analytics'}
-                    {activeKpiModal === 'category' && '🏷️ Category-Wise Industry Breakdown'}
-                    {activeKpiModal === 'source' && '🌐 Lead Platform Source Distribution'}
-                    {activeKpiModal === 'avgRating' && '⭐ Average Rating Analytics'}
-                    {activeKpiModal === 'highRated' && '🏆 High-Rated Businesses (4.5+)'}
-                    {activeKpiModal === 'coverage' && '🗺️ City & Category Coverage'}
-                    {activeKpiModal === 'open24h' && '🌙 24-Hour Operating Businesses'}
+                    {activeKpiModal === 'listings' && 'Master Listing Directory (500 Records)'}
+                    {activeKpiModal === 'city' && 'City-Wise Business Analytics'}
+                    {activeKpiModal === 'category' && 'Category-Wise Industry Breakdown'}
+                    {activeKpiModal === 'source' && 'Lead Platform Source Distribution'}
+                    {activeKpiModal === 'avgRating' && 'Average Rating Analytics'}
+                    {activeKpiModal === 'highRated' && 'High-Rated Businesses (4.5+)'}
+                    {activeKpiModal === 'coverage' && 'City & Category Coverage'}
+                    {activeKpiModal === 'open24h' && '24-Hour Operating Businesses'}
                   </h3>
                   <p className="kpi-modal-subtitle">
                     {activeKpiModal === 'listings' && 'Complete view of all registered business listings'}
