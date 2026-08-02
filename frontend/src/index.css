@@ -1,35 +1,35 @@
 :root {
-  --bg-primary: #0b1120;
-  --bg-secondary: #0f172a;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
   --card-bg: rgba(30, 41, 59, 0.65);
-  --card-border: rgba(148, 163, 184, 0.15);
-  --card-border-top: rgba(148, 163, 184, 0.25);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-border-top: rgba(255, 255, 255, 0.15);
   --glass-blur: blur(24px);
 
   --neo-glass-shadow: 
-    10px 14px 28px rgba(0, 0, 0, 0.3), 
-    -6px -6px 20px rgba(255, 255, 255, 0.02), 
-    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    10px 14px 28px rgba(0, 0, 0, 0.5), 
+    -6px -6px 20px rgba(255, 255, 255, 0.03), 
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
   --neo-glass-shadow-hover: 
-    14px 20px 36px rgba(0, 0, 0, 0.4), 
-    -8px -8px 24px rgba(255, 255, 255, 0.03), 
-    inset 0 1px 2px rgba(255, 255, 255, 0.2);
+    14px 20px 36px rgba(0, 0, 0, 0.6), 
+    -8px -8px 24px rgba(255, 255, 255, 0.05), 
+    inset 0 1px 2px rgba(255, 255, 255, 0.3);
   --neo-inset: 
-    inset 4px 4px 8px rgba(0, 0, 0, 0.4), 
-    inset -3px -3px 6px rgba(255, 255, 255, 0.03);
+    inset 4px 4px 8px rgba(0, 0, 0, 0.55), 
+    inset -3px -3px 6px rgba(255, 255, 255, 0.04);
   --neo-btn-shadow: 
-    4px 4px 10px rgba(0, 0, 0, 0.3), 
-    -2px -2px 6px rgba(255, 255, 255, 0.03), 
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    4px 4px 10px rgba(0, 0, 0, 0.45), 
+    -2px -2px 6px rgba(255, 255, 255, 0.05), 
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   --accent-cyan: #0ea5e9;
   --accent-indigo: #3b82f6;
-  --accent-purple: #2563eb;
-  --accent-emerald: #10b981;
+  --accent-purple: #1d4ed8;
+  --accent-emerald: #0284c7;
   --accent-amber: #f59e0b;
   --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
   --radius-lg: 20px;
   --radius-md: 12px;
 }
@@ -44,13 +44,15 @@
 body {
   background-color: #0b1120;
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.15) 0%, transparent 42%),
+    
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    
+    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.15) 0%, transparent 42%),
     radial-gradient(circle at 90% 12%, rgba(14, 165, 233, 0.15) 0%, transparent 45%),
-    radial-gradient(circle at 80% 88%, rgba(37, 99, 235, 0.15) 0%, transparent 45%),
-    radial-gradient(circle at 15% 85%, rgba(16, 185, 129, 0.1) 0%, transparent 45%),
-    radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.95) 0%, transparent 100%);
+    radial-gradient(circle at 80% 88%, rgba(29, 78, 216, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(2, 132, 199, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.9) 0%, transparent 100%);
   background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
   background-attachment: fixed;
   color: var(--text-primary);
