@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="glow-cyan" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="glow-purple" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <filter id="glass" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="120" fill="url(#bg-grad)" />
+  <rect width="512" height="512" rx="120" fill="transparent" stroke="rgba(255,255,255,0.1)" stroke-width="8" />
+
+  <!-- Metric Flow Logo Mark: Stylized M with Bar Chart integrated -->
+  <g filter="url(#glass)" transform="translate(96, 120)">
+    <!-- Left Pillar (Cyan) -->
+    <rect x="20" y="80" width="60" height="180" rx="16" fill="url(#glow-cyan)" />
+    <!-- Center Left (Purple) -->
+    <rect x="100" y="20" width="60" height="240" rx="16" fill="url(#glow-purple)" />
+    <!-- Center Right (Cyan) -->
+    <rect x="180" y="110" width="60" height="150" rx="16" fill="url(#glow-cyan)" />
+    <!-- Right Pillar (Purple) -->
+    <rect x="260" y="60" width="60" height="200" rx="16" fill="url(#glow-purple)" />
+    
+    <!-- Flow line across -->
+    <path d="M 50 170 C 130 90, 210 200, 290 140" fill="none" stroke="#ffffff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+backend/__pycache__/
+.venv/
+env/
+
+# Production build
+frontend/build/
+build/
+
+# Environment / Local settings
+.env
+.DS_Store
