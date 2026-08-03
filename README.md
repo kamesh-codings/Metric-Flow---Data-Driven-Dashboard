@@ -186,14 +186,15 @@ Built as a Data Science Internship assignment demonstrating:
 ---
 
 View of the DashBoard 🪟:
-<img width="1492" height="867" alt="Screenshot 2026-08-03 102510" src="https://github.com/user-attachments/assets/20f5a5eb-d9ee-4557-863f-daf4393813ce" />
-<img width="927" height="831" alt="Screenshot 2026-08-03 102536" src="https://github.com/user-attachments/assets/556d9e5c-4e1c-41b4-9508-11144eec5f2b" />
-<img width="882" height="861" alt="Screenshot 2026-08-03 102605" src="https://github.com/user-attachments/assets/097c3fdd-e515-4f39-8e09-d54f0b678f48" />
-<img width="877" height="650" alt="Screenshot 2026-08-03 102616" src="https://github.com/user-attachments/assets/613fdb80-b022-4e0f-bff3-fc82419ffacc" />
-<img width="1917" height="866" alt="Screenshot 2026-08-03 102445" src="https://github.com/user-attachments/assets/9a4b99ec-447d-4672-a398-4e0eb4b51d1f" />
 
+<img width="1917" height="866" alt="Screenshot 2026-08-03 102445" src="https://github.com/user-attachments/assets/43cb8d91-7e8a-47a0-aaad-61548c25e5f4" />
 
+<img width="1492" height="867" alt="Screenshot 2026-08-03 102510" src="https://github.com/user-attachments/assets/f6b34fa4-cad0-4483-b82d-9b5c42e87667" />
 
+<img width="927" height="831" alt="Screenshot 2026-08-03 102536" src="https://github.com/user-attachments/assets/cc624dbb-5835-4520-9313-51e63376bd52" />
 
+<img width="882" height="861" alt="Screenshot 2026-08-03 102605" src="https://github.com/user-attachments/assets/a4939d7f-8d3f-45bf-b98b-ec4e2abf20ec" />
+
+<img width="877" height="650" alt="Screenshot 2026-08-03 102616" src="https://github.com/user-attachments/assets/d70c778b-9431-4936-9be2-d3b33e2d1ea8" />
 
 *Generated on: August 2026*
