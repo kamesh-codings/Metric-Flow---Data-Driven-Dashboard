@@ -1,6 +1,7 @@
 # 📊 Business Listings Analytics Dashboard
 
-Working Demo Video : [ https://drive.google.com/drive/folders/1MOulD-ewQpLv9DrQkjpMhK1fMAwtA1Rd?usp=sharing ]
+Working Demo Video📺 : [ https://drive.google.com/drive/folders/1MOulD-ewQpLv9DrQkjpMhK1fMAwtA1Rd?usp=sharing ]
+
 
 > A full-stack Business Listings Dashboard built with **React.js**, **FastAPI**, and **MySQL** — designed to collect, store, and visualize 500+ business directory listings with real-time analytics.
 
@@ -183,5 +184,11 @@ Built as a Data Science Internship assignment demonstrating:
 - Interactive data visualization with Chart.js
 
 ---
+
+View of the DashBoard 🪟:
+<img width="877" height="650" alt="Screenshot 2026-08-03 102616" src="https://github.com/user-attachments/assets/8a4825da-19f0-4388-849b-3076a2abeb9e" />
+
+
+
 
 *Generated on: August 2026*
