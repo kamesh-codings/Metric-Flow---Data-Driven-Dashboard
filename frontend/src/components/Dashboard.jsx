@@ -247,6 +247,8 @@ const Dashboard = () => {
       legend: { display: false },
       tooltip: {
         backgroundColor: '#ffffff',
+        titleColor: '#1e293b',
+        bodyColor: '#334155',
         titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' },
         bodyFont: { family: 'Plus Jakarta Sans', size: 13 },
         padding: 12,
@@ -309,6 +311,8 @@ const Dashboard = () => {
       legend: { display: false },
       tooltip: {
         backgroundColor: '#ffffff',
+        titleColor: '#1e293b',
+        bodyColor: '#334155',
         titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' },
         bodyFont: { family: 'Plus Jakarta Sans', size: 13 },
         padding: 12,
@@ -356,6 +360,8 @@ const Dashboard = () => {
       },
       tooltip: {
         backgroundColor: '#ffffff',
+        titleColor: '#1e293b',
+        bodyColor: '#334155',
         titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' },
         bodyFont: { family: 'Plus Jakarta Sans', size: 13 },
         padding: 12,
@@ -729,7 +735,7 @@ const Dashboard = () => {
                       position: 'bottom',
                       labels: { color: '#e2e8f0', font: { family: 'Plus Jakarta Sans', size: 12, weight: '500' }, padding: 14, usePointStyle: true },
                     },
-                    tooltip: { backgroundColor: '#ffffff', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
+                    tooltip: { backgroundColor: '#ffffff', titleColor: '#1e293b', bodyColor: '#334155', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
                   },
                 }}
               />
@@ -763,7 +769,7 @@ const Dashboard = () => {
                   maintainAspectRatio: false,
                   plugins: {
                     legend: { display: false },
-                    tooltip: { backgroundColor: '#ffffff', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
+                    tooltip: { backgroundColor: '#ffffff', titleColor: '#1e293b', bodyColor: '#334155', titleFont: { family: 'Plus Jakarta Sans', size: 14, weight: 'bold' }, bodyFont: { family: 'Plus Jakarta Sans', size: 13 }, padding: 12 },
                   },
                   scales: {
                     x: { ticks: { color: '#475569', font: { family: 'Plus Jakarta Sans', size: 11 } }, grid: { color: 'rgba(0, 0, 0, 0.05)' } },
