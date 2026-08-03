@@ -186,7 +186,12 @@ Built as a Data Science Internship assignment demonstrating:
 ---
 
 View of the DashBoard 🪟:
-<img width="877" height="650" alt="Screenshot 2026-08-03 102616" src="https://github.com/user-attachments/assets/8a4825da-19f0-4388-849b-3076a2abeb9e" />
+<img width="1492" height="867" alt="Screenshot 2026-08-03 102510" src="https://github.com/user-attachments/assets/20f5a5eb-d9ee-4557-863f-daf4393813ce" />
+<img width="927" height="831" alt="Screenshot 2026-08-03 102536" src="https://github.com/user-attachments/assets/556d9e5c-4e1c-41b4-9508-11144eec5f2b" />
+<img width="882" height="861" alt="Screenshot 2026-08-03 102605" src="https://github.com/user-attachments/assets/097c3fdd-e515-4f39-8e09-d54f0b678f48" />
+<img width="877" height="650" alt="Screenshot 2026-08-03 102616" src="https://github.com/user-attachments/assets/613fdb80-b022-4e0f-bff3-fc82419ffacc" />
+<img width="1917" height="866" alt="Screenshot 2026-08-03 102445" src="https://github.com/user-attachments/assets/9a4b99ec-447d-4672-a398-4e0eb4b51d1f" />
+
 
 
 
