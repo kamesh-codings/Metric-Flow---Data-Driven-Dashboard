@@ -50,6 +50,7 @@ const Dashboard = () => {
   const [kpiSearchQuery, setKpiSearchQuery] = useState('');
   const [selectedKpiSubFilter, setSelectedKpiSubFilter] = useState(null);
   const [kpiModalPage, setKpiModalPage] = useState(1);
+  const [isFallbackMode, setIsFallbackMode] = useState(false);
 
   const fetchDashboardData = useCallback(async () => {
     setLoading(true);
@@ -66,9 +67,48 @@ const Dashboard = () => {
       setSourceData(sourceRes.data || []);
       setListings(listingsRes.data?.listings || []);
       setTotalListings(listingsRes.data?.total || 0);
+      setIsFallbackMode(false);
       setLastUpdated(new Date().toLocaleTimeString());
     } catch (err) {
-      console.error('Error fetching dashboard data:', err);
+      console.warn('Backend API connection failed, falling back to static 500 business dataset:', err);
+      try {
+        const fallbackRes = await axios.get('/data/listings.json');
+        const rawListings = fallbackRes.data || [];
+        
+        const formattedListings = rawListings.map((item, idx) => ({
+          id: item.id || idx + 1,
+          ...item
+        }));
+
+        const cityMap = {};
+        const catMap = {};
+        const sourceMap = {};
+        formattedListings.forEach(item => {
+          if (item.city) cityMap[item.city] = (cityMap[item.city] || 0) + 1;
+          if (item.category) catMap[item.category] = (catMap[item.category] || 0) + 1;
+          if (item.source) sourceMap[item.source] = (sourceMap[item.source] || 0) + 1;
+        });
+
+        const computedCityData = Object.entries(cityMap)
+          .map(([city, count]) => ({ city, count }))
+          .sort((a, b) => b.count - a.count);
+        const computedCatData = Object.entries(catMap)
+          .map(([category, count]) => ({ category, count }))
+          .sort((a, b) => b.count - a.count);
+        const computedSourceData = Object.entries(sourceMap)
+          .map(([source, count]) => ({ source, count }))
+          .sort((a, b) => b.count - a.count);
+
+        setListings(formattedListings);
+        setTotalListings(formattedListings.length);
+        setCityData(computedCityData);
+        setCategoryData(computedCatData);
+        setSourceData(computedSourceData);
+        setIsFallbackMode(true);
+        setLastUpdated(new Date().toLocaleTimeString());
+      } catch (fallbackErr) {
+        console.error('Failed to load static fallback dataset:', fallbackErr);
+      }
     } finally {
       setLoading(false);
     }
@@ -434,9 +474,9 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="header-actions">
-          <div className="status-badge">
-            <span className="pulse-dot"></span>
-            MySQL & FastAPI Connected
+          <div className="status-badge" style={isFallbackMode ? { background: 'rgba(14, 165, 233, 0.15)', borderColor: 'rgba(14, 165, 233, 0.4)', color: '#38bdf8' } : {}}>
+            <span className="pulse-dot" style={isFallbackMode ? { background: '#38bdf8', boxShadow: '0 0 10px #38bdf8' } : {}}></span>
+            {isFallbackMode ? 'Netlify Demo Mode (500 Records)' : 'MySQL & FastAPI Connected'}
           </div>
           <button className="btn-refresh" onClick={fetchDashboardData}>
             🔄 Refresh ({lastUpdated || 'Live'})
